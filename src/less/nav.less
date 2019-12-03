@@ -1,0 +1,132 @@
+.nav-wrapper {
+  background-image: url("../../img/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  width: 100%;
+  // height: 1365px;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 80px;
+  padding-right: 80px;
+  margin-left: auto;
+  padding-top: 30px;
+  margin-right: auto;
+  margin-bottom: 175px;
+}
+.span-menu {
+  display: none;
+  width: 45px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+  span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: white;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
+  }
+  span:nth-child(1) {
+    top: 0px;
+  }
+  span:nth-child(2) {
+    top: 13px;
+  }
+  span:nth-child(3) {
+    top: 26px;
+  }
+}
+
+.nav-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  line-height: 2.5;
+  justify-content: space-between;
+  width: 100%;
+}
+.logo {
+  margin-right: 35px;
+}
+.clients {
+  display: flex;
+  align-items: center;
+}
+
+.nav-open,
+.clients-open {
+  position: fixed;
+  display: block !important;
+  top: 0;
+  right: 0;
+  left: 0;
+  overflow: auto;
+  background-color: @font-color;
+  margin-top: 72px;
+  z-index: 1000;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.clients-open {
+  top: 148px;
+  padding-bottom: 20px;
+}
+.nav_item {
+  color: white;
+  font-family: "OpenSansBold", sans-serif;
+  font-size: 12px;
+  margin-right: 25px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+    color: @primary-color;
+    transition: all 0.2s ease-in;
+  }
+}
+.nav_item-open {
+  display: block;
+}
+.nav-btn {
+  border: 2px solid white;
+  padding: 11px 18px;
+  margin-right: 0px;
+  &:hover,
+  &:focus,
+  &:active {
+    border: 2px solid @primary-color;
+    transition: all 0.2s ease-in;
+  }
+}
+@media (max-width: 985px) {
+  .nav-container {
+    margin-bottom: 20px;
+  }
+  .span-menu {
+    display: block;
+  }
+  .items-left {
+    display: none;
+  }
+  .clients {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  .nav-container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}

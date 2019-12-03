@@ -1,0 +1,81 @@
+.form-wrapper {
+  display: flex;
+  width: 1110px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 110px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.form-right {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 570px;
+  margin-left: auto;
+  margin-right: auto;
+  h3 {
+    font-size: 26px;
+    font-family: "OpenSansBold", sans-serif;
+    color: @font-color;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.154;
+    margin-top: 73px;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 36px;
+    font-family: "OpenSansBold", sans-serif;
+    color: @font-color;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 0.833;
+    margin-bottom: 80px;
+  }
+}
+.form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  select,
+  input {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: 160px;
+    border-bottom: 1px solid @font-color;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 14px;
+    &:focus {
+      outline-color: @primary-color;
+    }
+  }
+
+  input[name="date"] {
+    background: url("../../img/date.png");
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+  input[name="time"] {
+    background: url("../../img/Time_icon.png");
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+}
+.form-button {
+  margin: 63px;
+}
+@media (max-width: 985px) {
+  .form-left {
+    display: none;
+  }
+  .form-wrapper {
+    width: auto;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 600px) {
+}

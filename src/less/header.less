@@ -1,0 +1,67 @@
+.header {
+  width: 1110px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 170px;
+}
+.title {
+  width: 635px;
+  text-align: left;
+  margin-bottom: 10px;
+  h1 {
+    font-size: 60px;
+    font-family: "OpenSansBold", sans-serif;
+    color: rgb(255, 255, 255);
+    // font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    span {
+      color: @primary-color;
+    }
+  }
+}
+.description {
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(255, 255, 255);
+  line-height: 2.143;
+  margin-bottom: 67px;
+}
+.button {
+  color: white;
+  font-family: "OpenSansBold", sans-serif;
+  letter-spacing: 1px;
+  padding: 10px 30px;
+  background-color: @primary-color;
+  border: 1px solid @primary-color;
+  text-transform: uppercase;
+  &:hover {
+    background-color: white;
+    color: @primary-color;
+    transition: all 0.3s ease-in;
+  }
+}
+@media (max-width: 985px) {
+  .title {
+    h1 {
+      font-size: 45px;
+    }
+  }
+  .header {
+    margin-bottom: 102px;
+  }
+}
+@media (max-width: 600px) {
+  .title {
+    h1 {
+      font-size: 30px;
+    }
+  }
+  .header {
+    margin-bottom: 52px;
+  }
+  .description {
+    margin-bottom: 20px;
+  }
+}
